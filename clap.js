@@ -9,13 +9,7 @@
     measurementId: "G-JXEZVWVL8G"
   };
 
-   window.addEventListener("load", function(){
-     authenticate().then(() => {
-        if (document.body.classList.contains('post-template')) {
-           getClaps("clapId-1");
-        }
-     })
- });
+
   
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
