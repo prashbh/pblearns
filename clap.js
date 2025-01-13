@@ -205,7 +205,7 @@
 d1.insertAdjacentHTML('beforeend', '<div id="clapContainer" class="fixed-button">\
     <div class="canvas">\
         <div id="totalCounter" class="total-counter"></div>\
-        <div id="clap" onmouseover="clapHovered()" onmouseup="clapReleased(\'clapId-1\')" onmousedown="clapPressed()" class="clap-container">\
+        <div id="clap" onmouseover="clapHovered()" onmouseup="clapReleased(\''+clapId+'\')" onmousedown="clapPressed()" class="clap-container">\
             <i class="clap-icon fa-solid fa-hands-clapping"></i>\
         </div>\
         \
