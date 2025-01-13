@@ -25,12 +25,12 @@
       var errorCode = error.code;
       var errorMessage = error.message;
       // ...
-      console.log("catch", errorCode, errorMessage)
+      //console.log("catch", errorCode, errorMessage)
     });
   }
 
   auth.onAuthStateChanged((user) => {
-    console.log("onAuthStateChanged:", user)
+    //console.log("onAuthStateChanged:", user)
     if (user) {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/v8/firebase.User
@@ -44,7 +44,7 @@
   function getClaps(id) {
     collection.doc(id).get().then((doc) => {
       totalCount = 0
-      console.log(doc)
+      //console.log(doc)
       if (doc.exists) {
         totalCount = doc.data().value  
       }
@@ -59,7 +59,7 @@
       "value": firebase.firestore.FieldValue.increment(count)
     }, {merge: true})
     .then((docRef) => {
-      console.log("Document written with ID: ", docRef.id);
+      //console.log("Document written with ID: ", docRef.id);
     })
     .catch((error) => {
       console.error("Error adding claps: ", error);
