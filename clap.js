@@ -95,7 +95,7 @@
   
   
   function clapHovered() {
-    let sonarClap = document.getElementsByClassName('sonar-clap');
+    let sonarClap = document.getElementsByClassName('sonar-clap')[0];
     sonarClap.classList.add('hover-active');
     setTimeout(() => {
       sonarClap.classList.remove('hover-active');
